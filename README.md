@@ -1,46 +1,24 @@
-# Getting Started with Create React App
+# Get app ready to run
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Install nvm node version manager
+- run `nvm use` on the terminal
+- if `nvm use` fails run nvm install with the proper node version
+- run `npm install`
 
-## Available Scripts
+# Run app
 
-In the project directory, you can run:
+- Run script `npm run start:db` to start fake db you can change the inital values at `src/data/mocks/db.js` runs on 8080 port
+- Run app `npm run start` the app proxies requests to the 8080 port, if json server is ran in another port, change the proxy config in the package.json
 
-### `npm start`
+# Notes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- App aproximadly made in about 8 hours
+- Fist time using `react-query`
+- Spent about 2 hours to get the json-server running as i wanted.
+- Rest of the 6 hours was used in the app
+- I didnt take in count styles, most of it its default mui
+- If you delete a note the favorite doesnt get deleted didnt understand how to cascade using json-server (would cascade with proper api)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# ToDO
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Only A single test was added as an example on how to mock external things to the test

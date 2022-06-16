@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { RawRecipeT } from 'types/recipe';
 
-type RecipeCardT = {
+export type RecipeCardT = {
   recipe: RawRecipeT;
 };
 

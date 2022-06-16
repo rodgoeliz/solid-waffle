@@ -2,7 +2,7 @@ import CancelIcon from '@mui/icons-material/Cancel';
 import { IconButton } from '@mui/material';
 import { useDeleteRecipe } from 'api/mutations/recipe';
 
-type DeleteRecipeT = {
+export type DeleteRecipeT = {
   recipeId: string;
 };
 export const DeleteRecipe = ({ recipeId }: DeleteRecipeT) => {
@@ -11,6 +11,7 @@ export const DeleteRecipe = ({ recipeId }: DeleteRecipeT) => {
   return (
     <IconButton
       color="error"
+      role="button"
       aria-label="delete recipe"
       disabled={isLoading}
       onClick={() => mutate()}

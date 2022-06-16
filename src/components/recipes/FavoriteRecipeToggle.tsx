@@ -4,7 +4,7 @@ import { useGetFavorites } from 'api/queries/favorites';
 
 import { Favorite } from 'components/global/Favorite';
 
-type FavoriteRecipeToggleT = {
+export type FavoriteRecipeToggleT = {
   recipeId: string;
 };
 export const FavoriteRecipeToggle = ({ recipeId }: FavoriteRecipeToggleT) => {
