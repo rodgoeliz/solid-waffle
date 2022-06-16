@@ -9,3 +9,13 @@ export type RawRecipeT = {
   steps: string[];
   ingredients: string[];
 };
+
+export type NewRecipe = {
+  name: string;
+  author: {
+    name: string;
+  };
+  cookTime: number;
+  ingredients: string[];
+  steps: string[];
+};

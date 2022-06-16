@@ -22,8 +22,6 @@ export const FavoriteRecipeToggle = ({ recipeId }: FavoriteRecipeToggleT) => {
       disabled={loadingToggle || isLoading}
       onClick={() => mutate()}
     >
-      {recipeId}
-
       <Favorite favorited={favorited} />
     </IconButton>
   );
